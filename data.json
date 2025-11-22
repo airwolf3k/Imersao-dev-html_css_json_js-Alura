@@ -1,0 +1,737 @@
+[
+    {
+        "nome": "Assembly",
+        "nascimento": "Criado em 1949 por David Wheeler",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Assembler_logo.svg/200px-Assembler_logo.svg.png",
+        "historia": "O nome 'Assembly' (montagem) vem do processo de 'montar' o código-fonte legível por humanos em código de máquina. Não se refere a uma única pessoa, mas a uma classe de linguagens que representam o primeiro passo de abstração acima do código binário.",
+        "descricao": "Linguagem de programação de baixo nível, imperativa e montada (assembled). Representa as instruções de máquina de forma legível, permitindo controle direto sobre o hardware. É extremamente rápida, mas de aprendizado muito difícil. É utilizada principalmente em drivers de dispositivo, bootloaders e kernels de sistemas operacionais onde o desempenho máximo é crucial.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "section .data\n    msg db 'Hello, World!', 0xa\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    mov ebx, 1\n    mov ecx, msg\n    mov edx, 13\n    int 0x80\n    mov eax, 1\n    int 0x80"
+            }
+        ],
+        "documentacao": "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html",
+        "tags": ["linguagem de programação", "baixo nível", "hardware", "performance", "compilada"]
+    },
+    {
+        "nome": "FORTRAN",
+        "nascimento": "Criado em 1957 por John Backus",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Fortran_logo.svg/200px-Fortran_logo.svg.png",
+        "historia": "O nome é uma contração de 'Formula Translation' (Tradução de Fórmulas), refletindo seu propósito original de facilitar a programação de cálculos matemáticos complexos para cientistas e engenheiros na IBM.",
+        "descricao": "FORTRAN (Formula Translation) é uma linguagem de programação imperativa, compilada e de tipagem estática. Foi uma das primeiras linguagens de alto nível e se destaca por sua performance excepcional em computação numérica e científica. Embora sua sintaxe seja mais antiga, continua sendo amplamente utilizada em domínios como engenharia, física e supercomputação.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "program HelloWorld\n    print *, \"Hello, World!\"\nend program HelloWorld"
+            }
+        ],
+        "documentacao": "https://fortran-lang.org/learn/",
+        "tags": ["linguagem de programação", "cálculo numérico", "científica", "alto nível", "compilada"]
+    },
+    {
+        "nome": "Lisp",
+        "nascimento": "Criado em 1958 por John McCarthy",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Lisp_logo.svg/200px-Lisp_logo.svg.png",
+        "historia": "Seu nome vem de 'List Processing' (Processamento de Listas). A estrutura de dados fundamental do Lisp é a lista, e o próprio código-fonte é escrito como listas, um conceito conhecido como homoiconicidade. Foi criada no MIT para pesquisas em inteligência artificial.",
+        "descricao": "Lisp (List Processing) é uma família de linguagens multiparadigma (funcional, procedural) e a segunda linguagem de alto nível mais antiga. Destaca-se por sua sintaxe única baseada em S-expressions (parênteses) e por seu poderoso sistema de macros. Foi pioneira em conceitos como gerenciamento automático de memória e tipagem dinâmica. É muito influente na área de inteligência artificial. Sua curva de aprendizado pode ser desafiadora devido à sua sintaxe distinta.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "(format t \"Hello, World!\")"
+            }
+        ],
+        "documentacao": "https://common-lisp.net/",
+        "tags": ["linguagem de programação", "funcional", "IA", "listas", "alto nível", "híbrida (VM)"]
+    },
+    {
+        "nome": "COBOL",
+        "nascimento": "Criado em 1959 por Grace Hopper e outros",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/COBOL_logo.svg/200px-COBOL_logo.svg.png",
+        "historia": "O nome é um acrônimo para 'Common Business-Oriented Language' (Linguagem Comum Orientada para Negócios). Foi projetado por um comitê para ser um padrão em processamento de dados comerciais, com uma sintaxe que se assemelha ao inglês para ser mais acessível a não-programadores.",
+        "descricao": "COBOL (Common Business-Oriented Language) é uma linguagem procedural e compilada, projetada para aplicações de negócios e processamento de dados em larga escala. Sua sintaxe é verbosa, parecida com o inglês, o que a torna robusta para sistemas financeiros e administrativos em mainframes, onde a confiabilidade é essencial. Não é considerada uma linguagem de fácil aprendizado para iniciantes modernos.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "IDENTIFICATION DIVISION.\nPROGRAM-ID. HELLO-WORLD.\nPROCEDURE DIVISION.\n    DISPLAY 'Hello, World!'.\n    STOP RUN."
+            }
+        ],
+        "documentacao": "https://www.ibm.com/docs/en/cobol-zos/6.4",
+        "tags": ["linguagem de programação", "negócios", "mainframe", "verbosa", "alto nível", "compilada"]
+    },
+    {
+        "nome": "APL",
+        "nascimento": "Criado em 1962 por Kenneth E. Iverson",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/APL_logo.svg/200px-APL_logo.svg.png",
+        "historia": "O nome é um acrônimo para 'A Programming Language'. Foi inicialmente concebida como uma notação matemática para descrever algoritmos de forma concisa antes de ser implementada como uma linguagem de programação. Seu foco era a manipulação de arrays.",
+        "descricao": "APL é uma linguagem de programação orientada a arrays, interativa e funcional, famosa por sua sintaxe extremamente concisa que utiliza um conjunto de símbolos especiais (glifos). É muito poderosa para manipulação de dados e operações matemáticas em vetores e matrizes. A necessidade de um teclado especial e a sintaxe única tornam sua curva de aprendizado bastante íngreme, mas é altamente expressiva para problemas de seu domínio.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "'Hello, World!'"
+            }
+        ],
+        "documentacao": "https://www.jsoftware.com/papers/APL.htm",
+        "tags": ["linguagem de programação", "arrays", "funcional", "matemática", "concisa", "interpretada"]
+    },
+    {
+        "nome": "BASIC",
+        "nascimento": "Criado em 1964 por John G. Kemeny e Thomas E. Kurtz",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/BASIC_logo.svg/200px-BASIC_logo.svg.png",
+        "historia": "O nome é um acrônimo para 'Beginner's All-purpose Symbolic Instruction Code' (Código de Instrução Simbólica de Uso Geral para Iniciantes). Foi projetado no Dartmouth College para tornar a programação acessível a estudantes de áreas não científicas, sendo uma das primeiras linguagens criadas com o objetivo de ser fácil de aprender.",
+        "descricao": "BASIC é uma família de linguagens de programação de alto nível, geralmente interpretadas, projetadas para serem fáceis de usar. Dominou a era dos microcomputadores nos anos 70 e 80, sendo o ponto de entrada para uma geração inteira de programadores. Destaca-se pela sua sintaxe simples e interativa, ideal para iniciantes. Versões modernas como o Visual Basic evoluíram significativamente a partir do original.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "10 PRINT \"Hello, World!\""
+            }
+        ],
+        "documentacao": "https://en.wikipedia.org/wiki/BASIC",
+        "tags": ["linguagem de programação", "iniciantes", "educacional", "alto nível", "interpretada"]
+    },
+    {
+        "nome": "Simula",
+        "nascimento": "Criado em 1967 por Ole-Johan Dahl e Kristen Nygaard",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Simula_67_logo.svg/200px-Simula_67_logo.svg.png",
+        "historia": "O nome vem de 'Simulation Language' (Linguagem de Simulação). Foi criada no Centro de Computação Norueguês para facilitar a criação de simulações de sistemas do mundo real, o que levou à invenção do conceito de 'objeto', tornando-a a primeira linguagem orientada a objetos.",
+        "descricao": "Linguagem compilada e de tipagem estática, considerada a primeira a introduzir os conceitos fundamentais da programação orientada a objetos (classes, herança, objetos). Seu principal destaque foi influenciar o design de quase todas as linguagens OO posteriores, como Smalltalk, C++ e Java. Foi criada para realizar simulações de sistemas complexos.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "Begin\n    OutText(\"Hello, World!\");\n    OutImage;\nEnd;"
+            }
+        ],
+        "documentacao": "https://portablito.github.io/simula/introduction.html",
+        "tags": ["linguagem de programação", "orientada a objetos", "simulação", "influente", "compilada"]
+    },
+    {
+        "nome": "Pascal",
+        "nascimento": "Criado em 1970 por Niklaus Wirth",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Pascal_logo.svg/200px-Pascal_logo.svg.png",
+        "historia": "Niklaus Wirth nomeou a linguagem em homenagem a Blaise Pascal, o matemático e filósofo francês do século XVII que construiu uma das primeiras calculadoras mecânicas. Foi criada com o objetivo de ensinar boas práticas de programação estruturada.",
+        "descricao": "Linguagem procedural, compilada e de tipagem estática, projetada para encorajar boas práticas de programação através da programação estruturada. Destaca-se pela sua sintaxe clara e rigorosa, sendo muito popular no ensino de programação. É considerada de fácil aprendizado e foi a base para linguagens como Delphi.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "program HelloWorld;\nbegin\n  writeln('Hello, World!');\nend."
+            }
+        ],
+        "documentacao": "https://www.freepascal.org/docs.var",
+        "tags": ["linguagem de programação", "estruturada", "educacional", "tipagem estática", "compilada"]
+    },
+    {
+        "nome": "C",
+        "nascimento": "Criado em 1972 por Dennis Ritchie",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/121px-C_Programming_Language.svg.png",
+        "historia": "O nome 'C' foi escolhido porque suas funcionalidades derivavam de uma linguagem anterior chamada 'B', que por sua vez foi inspirada na BCPL. Foi desenvolvida nos laboratórios Bell Labs para a criação do sistema operacional Unix.",
+        "descricao": "Linguagem procedural, compilada e de tipagem estática. É extremamente influente e se destaca por combinar recursos de linguagens de alto nível com a manipulação de memória de baixo nível. É muito rápida e eficiente, sendo a base para sistemas operacionais (Linux, Windows), bancos de dados e outras linguagens. Sua curva de aprendizado é moderada devido ao gerenciamento manual de memória.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}"
+            }
+        ],
+        "documentacao": "https://devdocs.io/c/",
+        "tags": ["linguagem de programação", "procedural", "sistemas", "performance", "influente", "compilada"]
+    },
+    {
+        "nome": "Prolog",
+        "nascimento": "Criado em 1972 por Alain Colmerauer e Philippe Roussel",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Prolog_logo.svg/121px-Prolog_logo.svg.png",
+        "historia": "O nome é uma abreviação de 'programmation en logique' (programação em lógica). Foi uma das primeiras linguagens de programação lógica e seu desenvolvimento foi fundamental para a área de inteligência artificial e linguística computacional.",
+        "descricao": "Prolog é uma linguagem de programação declarativa e lógica. Em vez de especificar uma sequência de comandos, o programador define fatos e regras sobre um domínio de problema. O sistema então usa um mecanismo de inferência para responder a consultas. É amplamente utilizada em sistemas especialistas, processamento de linguagem natural e inteligência artificial. Seu paradigma é muito diferente das linguagens procedurais ou orientadas a objetos.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "hello_world :- write('Hello, World!'), nl."
+            }
+        ],
+        "documentacao": "https://www.swi-prolog.org/pldoc/index.html",
+        "tags": ["linguagem de programação", "lógica", "declarativa", "IA", "sistemas especialistas", "interpretada"]
+    },
+    {
+        "nome": "Smalltalk",
+        "nascimento": "Criado em 1972 por Alan Kay, Dan Ingalls e Adele Goldberg",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Smalltalk_logo.svg/200px-Smalltalk_logo.svg.png",
+        "historia": "O nome 'Smalltalk' foi escolhido por Alan Kay como uma reação à complexidade das linguagens da época, como Simula. A ideia era criar um sistema simples onde até crianças pudessem programar, usando 'pequenas conversas' (small talk) entre objetos.",
+        "descricao": "Linguagem puramente orientada a objetos, com tipagem dinâmica e um ambiente de desenvolvimento integrado (IDE) inovador. Tudo em Smalltalk é um objeto, o que a diferencia de linguagens híbridas. Foi pioneira em interfaces gráficas (GUI) e influenciou profundamente o desenvolvimento de software moderno, incluindo padrões de projeto e metodologias ágeis.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "Transcript show: 'Hello, World!'."
+            }
+        ],
+        "documentacao": "http://www.smalltalk.org/",
+        "tags": ["linguagem de programação", "orientada a objetos", "pura", "GUI", "influente", "híbrida (JIT)"]
+    },
+    {
+        "nome": "SQL",
+        "nascimento": "Criado em 1974 por Donald D. Chamberlin e Raymond F. Boyce",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+        "historia": "Originalmente chamada de SEQUEL (Structured English Query Language), o nome foi encurtado para SQL por questões de marca registrada. Foi criada na IBM para gerenciar os dados do System R, um dos primeiros sistemas de banco de dados relacional.",
+        "descricao": "SQL (Structured Query Language) é uma linguagem declarativa de domínio específico, usada para gerenciar e consultar dados em bancos de dados relacionais. Não é uma linguagem de programação de propósito geral, mas se destaca por sua sintaxe expressiva e padronizada para manipulação de dados. É de fácil aprendizado para consultas básicas e essencial para qualquer profissional de dados.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "CREATE TABLE Message (Text CHAR(15));\nINSERT INTO Message (Text) VALUES ('Hello, World!');\nSELECT Text FROM Message;"
+            }
+        ],
+        "documentacao": "https://devdocs.io/sql/",
+        "tags": ["linguagem de consulta", "banco de dados", "declarativa", "dados", "relacional", "interpretada"]
+    },
+    {
+        "nome": "Scheme",
+        "nascimento": "Criado em 1975 por Guy L. Steele e Gerald Jay Sussman",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Scheme_logo.svg/200px-Scheme_logo.svg.png",
+        "historia": "O nome 'Scheme' é um jogo de palavras com os nomes de outras linguagens da época, como Planner e Conniver. Seus criadores, no MIT, queriam explorar a essência da computação com um dialeto Lisp minimalista e elegante.",
+        "descricao": "Scheme é um dialeto minimalista da família Lisp, conhecido por sua elegância e simplicidade. É uma linguagem multiparadigma (principalmente funcional) e de tipagem dinâmica. Destaca-se por ser a primeira linguagem Lisp a exigir otimização de chamada de cauda (tail-call optimization), um recurso crucial para programação funcional. É amplamente utilizada no ensino de ciência da computação, sendo a base do livro 'Structure and Interpretation of Computer Programs'.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "(display \"Hello, World!\")\n(newline)"
+            }
+        ],
+        "documentacao": "https://schemers.org/",
+        "tags": ["linguagem de programação", "funcional", "Lisp", "minimalista", "educacional", "interpretada"]
+    },
+    {
+        "nome": "Ada",
+        "nascimento": "Criado em 1980 por Jean Ichbiah",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ada_Mascot_with_slogan.svg/200px-Ada_Mascot_with_slogan.svg.png",
+        "historia": "Nomeada em homenagem a Ada Lovelace, considerada a primeira programadora da história. A linguagem foi encomendada pelo Departamento de Defesa dos EUA (DoD) para ser uma linguagem padrão para seus sistemas de software embarcados e de missão crítica, substituindo centenas de linguagens diferentes que estavam em uso.",
+        "descricao": "Ada é uma linguagem de programação multiparadigma, compilada e de tipagem estática, projetada com foco em segurança, confiabilidade e manutenibilidade. Destaca-se por seu forte sistema de tipos e suporte nativo a concorrência (tarefas), sendo ideal para sistemas de larga escala e de longa duração onde a correção é vital, como em aviação, controle de tráfego aéreo e sistemas militares. Sua curva de aprendizado é considerada íngreme devido ao seu rigor.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "with Ada.Text_IO;\nprocedure Hello is\nbegin\n   Ada.Text_IO.Put_Line (\"Hello, World!\");\nend Hello;"
+            }
+        ],
+        "documentacao": "http://www.ada-auth.org/standards/rm12_w_tc1/html/RM-TTL.html",
+        "tags": ["linguagem de programação", "segurança", "sistemas críticos", "concorrência", "tipagem estática", "compilada"]
+    },
+    {
+        "nome": "MATLAB",
+        "nascimento": "Criado em 1984 por Cleve Moler",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/121px-Matlab_Logo.png",
+        "historia": "O nome é uma abreviação de 'matrix laboratory' (laboratório de matrizes). Foi criado para fornecer acesso fácil a bibliotecas de computação de matrizes como LINPACK e EISPACK sem a necessidade de aprender Fortran. Foi comercializado pela MathWorks e se tornou um padrão na indústria e academia.",
+        "descricao": "MATLAB é uma linguagem de programação de alto nível e um ambiente interativo para computação numérica, visualização e programação. É amplamente utilizada em engenharia e ciências para manipulação de matrizes, plotagem de dados, implementação de algoritmos e criação de interfaces. É uma linguagem proprietária e otimizada para operações matemáticas.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "disp('Hello, World!')"
+            }
+        ],
+        "documentacao": "https://www.mathworks.com/help/matlab/",
+        "tags": ["linguagem de programação", "cálculo numérico", "engenharia", "científica", "matrizes", "proprietária", "interpretada"]
+    },
+    {
+        "nome": "Objective-C",
+        "nascimento": "Criado em 1984 por Brad Cox e Tom Love",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Objective-C_Logo.svg/200px-Objective-C_Logo.svg.png",
+        "historia": "O nome reflete seu objetivo: adicionar capacidades de orientação a objetos ('Objective') à linguagem C. Foi criada para trazer a produtividade do Smalltalk para o ambiente familiar e performático do C. Foi a base para a NeXTSTEP, que mais tarde se tornou o macOS e iOS.",
+        "descricao": "Linguagem orientada a objetos, compilada e de tipagem dinâmica, que é um superconjunto da linguagem C. Seu principal diferencial foi adicionar um sistema de mensagens inspirado em Smalltalk ao C. Foi a principal linguagem para desenvolvimento de aplicativos para macOS e iOS por décadas, antes de ser gradualmente substituída por Swift. É considerada mais verbosa e complexa que as linguagens modernas.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "#import <Foundation/Foundation.h>\n\nint main(int argc, const char * argv[]) {\n    @autoreleasepool {\n        NSLog(@\"Hello, World!\");\n    }\n    return 0;\n}"
+            }
+        ],
+        "documentacao": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+        "tags": ["linguagem de programação", "orientada a objetos", "Apple", "macOS", "iOS", "compilada"]
+    },
+    {
+        "nome": "C++",
+        "nascimento": "Criado em 1985 por Bjarne Stroustrup",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/121px-ISO_C%2B%2B_Logo.svg.png",
+        "historia": "Originalmente chamada 'C with Classes', o nome 'C++' foi sugerido por Rick Mascitti. O '++' é o operador de incremento em C, simbolizando que a linguagem é uma evolução da linguagem C, adicionando novas funcionalidades sobre a base já existente.",
+        "descricao": "Linguagem multiparadigma (procedural, orientada a objetos, funcional), compilada e de tipagem estática. É uma extensão da linguagem C, adicionando classes e outros recursos. Destaca-se pelo alto desempenho e controle, sendo usada em jogos, softwares de alta performance e sistemas embarcados. É extremamente poderosa, mas sua curva de aprendizado é considerada difícil devido à sua complexidade.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\";\n    return 0;\n}"
+            }
+        ],
+        "documentacao": "https://isocpp.org/documentation",
+        "tags": ["linguagem de programação", "performance", "jogos", "sistemas", "orientada a objetos", "compilada"]
+    },
+    {
+        "nome": "Erlang",
+        "nascimento": "Criado em 1986 por Joe Armstrong, Robert Virding e Mike Williams",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Erlang_logo.svg/121px-Erlang_logo.svg.png",
+        "historia": "Desenvolvida na Ericsson, o nome é tanto uma referência ao seu criador, Agner Krarup Erlang, um pioneiro da engenharia de telecomunicações, quanto um acrônimo para 'Ericsson Language'. Foi criada para construir sistemas de telecomunicações massivamente escaláveis e com altíssima disponibilidade (os famosos 'nove noves' de uptime, 99.9999999%).",
+        "descricao": "Linguagem funcional, concorrente, interpretada (para uma VM, a BEAM) e de tipagem dinâmica. Seu principal destaque é o modelo de atores para concorrência, que permite a criação de sistemas distribuídos e tolerantes a falhas de forma robusta. Processos leves, isolados e que se comunicam por mensagens são a base da linguagem. É a fundação para sistemas como WhatsApp e a linguagem Elixir. O aprendizado pode ser desafiador para quem vem do mundo orientado a objetos.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "-module(hello).\n-export([hello_world/0]).\n\nhello_world() ->\n    io:fwrite(\"Hello, World!\\n\")."
+            }
+        ],
+        "documentacao": "https://www.erlang.org/docs",
+        "tags": ["linguagem de programação", "funcional", "concorrência", "telecom", "servidor", "híbrida (VM)"]
+    },
+    {
+        "nome": "Perl",
+        "nascimento": "Criado em 1987 por Larry Wall",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Perl_language_logo.svg/200px-Perl_language_logo.svg.png",
+        "historia": "Larry Wall, um linguista, criou o Perl para processar relatórios de texto. O nome originalmente seria 'PEARL', um acrônimo para 'Practical Extraction and Report Language', mas como já existia uma linguagem com esse nome, ele o encurtou para 'Perl'.",
+        "descricao": "Linguagem de programação interpretada e de tipagem dinâmica, famosa por sua filosofia 'há mais de uma maneira de fazer isso'. Destaca-se por suas poderosas capacidades de processamento de texto com expressões regulares. Foi muito popular para scripts de administração de sistemas e desenvolvimento web (CGI), mas seu uso diminuiu em favor de Python e outras linguagens.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "use strict;\nuse warnings;\n\nprint \"Hello, World!\\n\";"
+            }
+        ],
+        "documentacao": "https://perldoc.perl.org/",
+        "tags": ["linguagem de programação", "script", "texto", "web", "interpretada"]
+    },
+    {
+        "nome": "LPC",
+        "nascimento": "Criado em 1989 por Lars Pensjö",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gnome-fs-regular.svg/121px-Gnome-fs-regular.svg.png",
+        "historia": "O nome é um acrônimo para 'Lars Pensjö C'. Foi desenvolvida para ser a linguagem de programação usada em MUDs (Multi-User Dungeons), jogos de texto online. A ideia era ter uma linguagem parecida com C, mas mais segura e fácil de usar para criar mundos virtuais.",
+        "descricao": "LPC é uma linguagem de programação orientada a objetos, interpretada e com sintaxe similar a C. Foi projetada especificamente para o desenvolvimento de jogos MUD. Seu principal destaque é a capacidade de atualizar o código do jogo em tempo real, sem a necessidade de reiniciar o servidor, o que é ideal para ambientes de jogo persistentes.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo de comando de jogador:",
+                "codigo": "void create() {\n    add_action(\"dizer_ola\", \"dizer\");\n}\n\nint dizer_ola(string str) {\n    if (str == \"ola\") {\n        write(\"Olá, Mundo!\\n\");\n        return 1;\n    }\n    return 0;\n}"
+            }
+        ],
+        "documentacao": "http://lpc-docs.mudos.org/",
+        "tags": ["linguagem de programação", "jogos", "MUD", "orientada a objetos", "interpretada"]
+    },
+    {
+        "nome": "Haskell",
+        "nascimento": "Criado em 1990 por um comitê de acadêmicos",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/121px-Haskell-Logo.svg.png",
+        "historia": "A linguagem foi nomeada em homenagem a Haskell Curry, um lógico e matemático cujo trabalho em lógica combinatória serve como base para a programação funcional. Foi criada por um comitê de acadêmicos para unificar as linguagens de pesquisa funcional existentes.",
+        "descricao": "Linguagem puramente funcional, compilada, com forte tipagem estática e avaliação preguiçosa (lazy evaluation). Destaca-se por sua segurança, evitando efeitos colaterais e facilitando a criação de software concorrente e correto. É usada em academia e em indústrias que exigem alta confiabilidade. Sua curva de aprendizado é íngreme para quem vem de linguagens imperativas.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "main :: IO ()\nmain = putStrLn \"Hello, World!\""
+            }
+        ],
+        "documentacao": "https://www.haskell.org/documentation/",
+        "tags": ["linguagem de programação", "funcional", "tipagem estática", "acadêmica", "segurança", "compilada"]
+    },
+    {
+        "nome": "Visual Basic",
+        "nascimento": "Criado em 1991 pela Microsoft",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Visual_Basic_6.0_logo.svg/121px-Visual_Basic_6.0_logo.svg.png",
+        "historia": "O nome 'Visual' refere-se ao método de criar a interface gráfica do usuário (GUI) de forma visual, arrastando e soltando componentes. Baseado na linguagem BASIC, foi projetado para simplificar drasticamente o desenvolvimento de aplicações para o sistema operacional Windows.",
+        "descricao": "Visual Basic é uma linguagem de programação orientada a eventos e um ambiente de desenvolvimento integrado (IDE). Foi pioneira no conceito de Desenvolvimento Rápido de Aplicações (RAD), permitindo que programadores criassem aplicações complexas com GUI de forma muito produtiva. Foi extremamente popular para o desenvolvimento de software comercial e corporativo nos anos 90 e início dos 2000. Evoluiu para o Visual Basic .NET (VB.NET).",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "Private Sub Form_Load()\n    MsgBox \"Hello, World!\"\nEnd Sub"
+            }
+        ],
+        "documentacao": "https://learn.microsoft.com/pt-br/dotnet/visual-basic/",
+        "tags": ["linguagem de programação", "windows", "RAD", "orientada a eventos", "Microsoft", "híbrida (VM)"]
+    },
+    {
+        "nome": "Python",
+        "nascimento": "Criado em 1991 por Guido van Rossum",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/121px-Python-logo-notext.svg.png",
+        "historia": "O nome 'Python' não vem da cobra, mas sim do grupo de comédia britânico Monty Python. Guido van Rossum era fã do programa e queria um nome curto, único e um pouco misterioso para seu projeto durante as férias de Natal.",
+        "descricao": "Linguagem multiparadigma (orientada a objetos, procedural, funcional), interpretada e de tipagem dinâmica. Destaca-se por sua sintaxe limpa e legível, o que a torna uma das linguagens mais fáceis de aprender. É extremamente versátil, sendo amplamente utilizada em desenvolvimento web, ciência de dados, inteligência artificial e automação. Sua performance é mais lenta que linguagens compiladas, mas sua produtividade é alta.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "print(\"Hello, World!\")"
+            }
+        ],
+        "documentacao": "https://docs.python.org/pt-br/3/",
+        "tags": ["linguagem de programação", "web", "ciência de dados", "IA", "híbrida (VM)"]
+    },
+    {
+        "nome": "HTML",
+        "nascimento": "Criado em 1993 por Tim Berners-Lee",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/121px-HTML5_logo_and_wordmark.svg.png",
+        "historia": "O nome é um acrônimo para 'HyperText Markup Language' (Linguagem de Marcação de Hipertexto). Foi criado no CERN como uma forma simples de compartilhar documentos científicos através da recém-criada World Wide Web.",
+        "descricao": "HTML não é uma linguagem de programação, mas sim uma linguagem de marcação, sendo o bloco de construção fundamental da web. Ela define a estrutura e o conteúdo de uma página web usando 'tags'. É interpretada diretamente pelos navegadores para renderizar texto, imagens e outros elementos. É a base sobre a qual CSS e JavaScript atuam.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo de estrutura básica:",
+                "codigo": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Título da Página</title>\n</head>\n<body>\n  <h1>Olá, Mundo!</h1>\n</body>\n</html>"
+            }
+        ],
+        "documentacao": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+        "tags": ["linguagem de marcação", "web", "frontend", "estrutura", "padrão"]
+    },
+    {
+        "nome": "Lua",
+        "nascimento": "Criado em 1993 por Roberto Ierusalimschy, Luiz Henrique de Figueiredo e Waldemar Celes",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/121px-Lua-Logo.svg.png",
+        "historia": "Criada no Brasil (PUC-Rio), o nome 'Lua' foi escolhido porque a linguagem tinha inspiração em outra chamada 'SOL' (Simple Object Language). Como 'Sol' e 'Lua' são astros celestes, o nome pareceu uma sucessão natural e poética.",
+        "descricao": "Linguagem de script multiparadigma, interpretada e de tipagem dinâmica. É extremamente leve, rápida e fácil de integrar com outras aplicações, especialmente as escritas em C/C++. Seu principal destaque é ser uma linguagem de extensão, muito usada em motores de jogos (como Roblox e World of Warcraft) e sistemas embarcados. É considerada de fácil aprendizado.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "print(\"Hello, World!\")"
+            }
+        ],
+        "documentacao": "https://www.lua.org/manual/5.4/pt/",
+        "tags": ["linguagem de programação", "script", "jogos", "leve", "híbrida (VM)"]
+    },
+    {
+        "nome": "Pike",
+        "nascimento": "Criado em 1994 por Fredrik Hübinette e outros",
+        "logo": "https://pike.lysator.liu.se/pike.png",
+        "historia": "Originalmente chamada de µLPC (micro LPC), foi criada como uma evolução da linguagem LPC, com o objetivo de ser uma linguagem de script mais rápida, limpa e de propósito geral. O nome 'Pike' (lúcio, um peixe) foi escolhido por ser curto e não ter um significado técnico específico.",
+        "descricao": "Pike é uma linguagem de programação multiparadigma, interpretada e de tipagem dinâmica, com uma sintaxe que lembra C++ e Java. É rápida, flexível e possui um sistema de tipos forte, mas dinâmico. É usada para uma variedade de tarefas, desde desenvolvimento web e servidores de jogos até processamento de dados e automação.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "int main() {\n    write(\"Hello, World!\\n\");\n    return 0;\n}"
+            }
+        ],
+        "documentacao": "https://pike.lysator.liu.se/documentation/",
+        "tags": ["linguagem de programação", "script", "servidor", "propósito geral", "interpretada"]
+    },
+    {
+        "nome": "R",
+        "nascimento": "Criado em 1993 por Ross Ihaka e Robert Gentleman",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/121px-R_logo.svg.png",
+        "historia": "O nome 'R' é um jogo de palavras. Primeiro, é uma referência à primeira letra dos nomes de seus criadores (Ross e Robert). Segundo, é uma homenagem à linguagem 'S', na qual R foi fortemente inspirada.",
+        "descricao": "Linguagem interpretada e de tipagem dinâmica, focada em computação estatística e visualização de dados. Seu grande destaque é o vasto ecossistema de pacotes para análise estatística, machine learning e gráficos. É a linguagem padrão em muitas áreas acadêmicas e de pesquisa. Sua sintaxe pode ser peculiar para programadores de outras áreas, mas é essencial para estatísticos.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "print(\"Hello, World!\")"
+            }
+        ],
+        "documentacao": "https://cran.r-project.org/manuals.html",
+        "tags": ["linguagem de programação", "estatística", "ciência de dados", "visualização", "interpretada"]
+    },
+    {
+        "nome": "Delphi",
+        "nascimento": "Criado em 1995 pela Borland",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/RAD_Studio_11_logo.svg/200px-RAD_Studio_11_logo.svg.png",
+        "historia": "O nome 'Delphi' foi um codinome de projeto que acabou se tornando oficial. A ideia era que, se você quisesse falar com o 'Oráculo' (Oracle Database), você iria a Delphi. A linguagem se tornou uma ferramenta poderosa para conectar aplicações a bancos de dados.",
+        "descricao": "Linguagem orientada a objetos (baseada em Object Pascal) e um ambiente de desenvolvimento (IDE) com compilador rápido. Destaca-se pelo desenvolvimento rápido de aplicações (RAD) visuais para desktop (Windows) e, mais recentemente, mobile. Foi muito popular por sua facilidade em criar interfaces gráficas e compilar executáveis nativos e rápidos.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "program HelloWorld;\n{$APPTYPE CONSOLE}\nbegin\n  WriteLn('Hello, World!');\nend."
+            }
+        ],
+        "documentacao": "https://docwiki.embarcadero.com/RADStudio/en/Delphi_Language_Reference",
+        "tags": ["linguagem de programação", "desktop", "windows", "RAD", "compilada"]
+    },
+    {
+        "nome": "Java",
+        "nascimento": "Criado em 1995 por James Gosling",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/121px-Java_programming_language_logo.svg.png",
+        "historia": "Originalmente chamada de 'Oak' (carvalho), a linguagem precisou de um novo nome. Após uma sessão de brainstorming, 'Java' foi escolhido, inspirado no café da ilha de Java, na Indonésia, que a equipe costumava tomar. O ícone da xícara de café se tornou um símbolo da linguagem.",
+        "descricao": "Linguagem orientada a objetos, compilada para bytecode e de tipagem estática. Seu lema é 'escreva uma vez, rode em qualquer lugar' (WORA), graças à Máquina Virtual Java (JVM). É robusta, segura e escalável, sendo amplamente utilizada em sistemas corporativos (backend), aplicações Android e processamento de Big Data. Sua performance é excelente, mas pode ser mais verbosa que linguagens modernas.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\"); \n    }\n}"
+            }
+        ],
+        "documentacao": "https://docs.oracle.com/en/java/",
+        "tags": ["linguagem de programação", "servidor", "android", "orientada a objetos", "JVM", "híbrida (VM)"]
+    },
+    {
+        "nome": "JavaScript",
+        "nascimento": "Criado em 1995 por Brendan Eich",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/121px-JavaScript-logo.png",
+        "historia": "Criada em apenas 10 dias, foi originalmente chamada de 'Mocha' e depois 'LiveScript'. O nome 'JavaScript' foi uma jogada de marketing da Netscape para capitalizar a popularidade do Java na época, embora as duas linguagens sejam muito diferentes.",
+        "descricao": "Linguagem multiparadigma, interpretada (com compilação Just-In-Time) e de tipagem dinâmica. É a linguagem padrão da web, rodando em todos os navegadores para criar interatividade. Com Node.js, também é usada no backend. Seu ecossistema é gigantesco (React, Angular, Vue). É de fácil aprendizado inicial, mas dominar seus aspectos assíncronos pode ser complexo.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "console.log(\"Hello, World!\");"
+            }
+        ],
+        "documentacao": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+        "tags": ["linguagem de programação", "web", "frontend", "servidor", "híbrida (JIT)"]
+    },
+    {
+        "nome": "PHP",
+        "nascimento": "Criado em 1995 por Rasmus Lerdorf",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/121px-PHP-logo.svg.png",
+        "historia": "O nome original era 'Personal Home Page Tools' (Ferramentas para Página Pessoal), pois foi criado por Rasmus para gerenciar seu próprio site. Mais tarde, o nome se tornou um acrônimo recursivo: 'PHP: Hypertext Preprocessor'.",
+        "descricao": "Linguagem de script interpretada e de tipagem dinâmica, projetada para o desenvolvimento web. Destaca-se pela facilidade de integração com HTML e pela vasta quantidade de frameworks, como Laravel e WordPress, que potencializam grande parte da web. É de fácil aprendizado para iniciantes e possui uma grande comunidade, embora tenha performance inferior a linguagens compiladas.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "<?php\n    echo \"Hello, World!\";\n?>"
+            }
+        ],
+        "documentacao": "https://www.php.net/manual/pt_BR/",
+        "tags": ["linguagem de programação", "web", "servidor", "script", "interpretada"]
+    },
+    {
+        "nome": "AIML",
+        "nascimento": "Criado em 1995 por Richard Wallace",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/AIML_logo.png/150px-AIML_logo.png",
+        "historia": "O nome é um acrônimo para 'Artificial Intelligence Markup Language'. Foi desenvolvida como uma variante do XML para criar chatbots, especificamente para o projeto A.L.I.C.E. (Artificial Linguistic Internet Computer Entity).",
+        "descricao": "AIML é uma linguagem de marcação baseada em XML usada para criar agentes de conversação ou chatbots. Ela funciona definindo padrões de perguntas e respostas. Não é uma linguagem de programação de propósito geral, mas sim uma forma de estruturar o conhecimento de um chatbot. É simples e baseada em regras, facilitando a criação de diálogos básicos.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo de regra:",
+                "codigo": "<category>\n  <pattern>OLÁ</pattern>\n  <template>Olá, Mundo!</template>\n</category>"
+            }
+        ],
+        "documentacao": "http://www.alicebot.org/aiml.html",
+        "tags": ["linguagem de marcação", "IA", "chatbot", "XML", "declarativa"]
+    },
+    {
+        "nome": "Ruby",
+        "nascimento": "Criado em 1995 por Yukihiro \"Matz\" Matsumoto",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/121px-Ruby_logo.svg.png",
+        "historia": "Yukihiro Matsumoto escolheu o nome 'Ruby' como uma referência à pedra de nascimento de um colega, seguindo a tendência de nomear linguagens com nomes de gemas, como Perl. Ele queria uma linguagem que fosse 'o melhor amigo de um programador'.",
+        "descricao": "Linguagem orientada a objetos pura, interpretada e de tipagem dinâmica, com foco na felicidade e produtividade do desenvolvedor. Sua sintaxe é elegante e expressiva. Destaca-se pelo framework Ruby on Rails, que popularizou muitas convenções de desenvolvimento web. É considerada de fácil aprendizado e ótima para prototipagem rápida.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "puts \"Hello, World!\""
+            }
+        ],
+        "documentacao": "https://www.ruby-lang.org/pt/documentation/",
+        "tags": ["linguagem de programação", "web", "servidor", "orientada a objetos", "híbrida (VM)"]
+    },
+    {
+        "nome": "XML",
+        "nascimento": "Criado em 1996 pelo W3C",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/XML_logo.svg/121px-XML_logo.svg.png",
+        "historia": "O nome é um acrônimo para 'eXtensible Markup Language' (Linguagem de Marcação Extensível). Foi projetado pelo World Wide Web Consortium (W3C) para ser uma linguagem de marcação mais flexível e rigorosa que o HTML, focada na descrição e transporte de dados.",
+        "descricao": "XML é uma linguagem de marcação que define um conjunto de regras para codificar documentos em um formato que é legível tanto por humanos quanto por máquinas. Seu principal objetivo é armazenar e transportar dados, não exibi-los (diferente do HTML). É amplamente utilizado em arquivos de configuração, serviços web (SOAP) e para definir outros formatos de arquivo.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo de dados:",
+                "codigo": "<mensagem>\n  <para>Mundo</para>\n  <de>Computador</de>\n  <texto>Olá, Mundo!</texto>\n</mensagem>"
+            }
+        ],
+        "documentacao": "https://www.w3.org/XML/",
+        "tags": ["linguagem de marcação", "dados", "configuração", "padrão", "web"]
+    },
+    {
+        "nome": "C#",
+        "nascimento": "Criado em 2000 pela Microsoft",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/200px-Logo_C_sharp.svg.png",
+        "historia": "O nome 'C#' (C Sharp) foi inspirado na notação musical, onde um sustenido (#) indica que uma nota deve ser tocada um semitom mais alto. A ideia era simbolizar que C# é uma 'evolução' da linguagem C++, assim como C++ foi uma evolução de C.",
+        "descricao": "Linguagem multiparadigma, compilada e de tipagem estática, desenvolvida pela Microsoft para a plataforma .NET. É moderna, segura e de alta performance. Destaca-se pela sua versatilidade, sendo usada no desenvolvimento de aplicações web, jogos (com a engine Unity), software para Windows e mobile (com Xamarin/MAUI). Sua curva de aprendizado é moderada.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "using System;\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}"
+            }
+        ],
+        "documentacao": "https://learn.microsoft.com/pt-br/dotnet/csharp/",
+        "tags": ["linguagem de programação", "servidor", "jogos", "windows", "orientada a objetos", "híbrida (JIT)"]
+    },
+    {
+        "nome": "Scala",
+        "nascimento": "Criado em 2004 por Martin Odersky",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-logo-bold.svg/200px-Scala-logo-bold.svg.png",
+        "historia": "O nome 'Scala' é uma junção de 'Scalable Language' (Linguagem Escalável). Foi projetada para crescer com as demandas do usuário, desde pequenos scripts até sistemas massivos, combinando programação orientada a objetos e funcional.",
+        "descricao": "Linguagem híbrida (orientada a objetos e funcional), compilada para bytecode Java e de tipagem estática. Roda na JVM e se destaca por sua sintaxe concisa e sistema de tipos poderoso, permitindo código seguro e escalável. É muito utilizada em processamento de Big Data (com Apache Spark) e sistemas concorrentes. É considerada uma linguagem de aprendizado difícil.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "object HelloWorld extends App {\n  println(\"Hello, World!\")\n}"
+            }
+        ],
+        "documentacao": "https://docs.scala-lang.org/",
+        "tags": ["linguagem de programação", "funcional", "orientada a objetos", "JVM", "big data", "híbrida (VM)"]
+    },
+    {
+        "nome": "F#",
+        "nascimento": "Criado em 2005 pela Microsoft",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/F_Sharp_logo.svg/121px-F_Sharp_logo.svg.png",
+        "historia": "O nome 'F#' segue a convenção de nomes de linguagens da Microsoft (.NET), como C#. O 'F' significa 'Funcional'. Foi criada por Don Syme na Microsoft Research para trazer uma linguagem funcional de primeira classe para a plataforma .NET, inspirada em ML e OCaml.",
+        "descricao": "F# (F Sharp) é uma linguagem de programação multiparadigma (funcional, orientada a objetos, imperativa), de tipagem estática e forte, que roda na plataforma .NET. Destaca-se por sua sintaxe concisa, imutabilidade por padrão e poderoso sistema de tipos, o que a torna excelente para análise de dados, computação científica e sistemas complexos. É totalmente interoperável com C# e outras linguagens .NET.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "printfn \"Hello, World!\""
+            }
+        ],
+        "documentacao": "https://fsharp.org/docs/",
+        "tags": ["linguagem de programação", "funcional", "Microsoft", ".NET", "tipagem estática", "híbrida (JIT)"]
+    },
+    {
+        "nome": "Go",
+        "nascimento": "Criado em 2009 pelo Google",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/121px-Go_Logo_Blue.svg.png",
+        "historia": "Criada no Google para resolver problemas de engenharia de software em larga escala, a linguagem é frequentemente chamada de 'Golang' por causa de seu site (golang.org), mas o nome oficial é apenas 'Go'. O mascote, o Gopher, foi desenhado por Renée French.",
+        "descricao": "Linguagem procedural, compilada e de tipagem estática, projetada pelo Google para ser simples e eficiente. Seu grande destaque é o suporte nativo à concorrência (goroutines), facilitando a criação de sistemas de rede e microsserviços de alta performance. É muito rápida e de fácil aprendizado para quem já programa. É amplamente usada em ferramentas de infraestrutura, como Docker e Kubernetes.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}"
+            }
+        ],
+        "documentacao": "https://go.dev/doc/",
+        "tags": ["linguagem de programação", "servidor", "concorrência", "microsserviços", "compilada"]
+    },
+    {
+        "nome": "Rust",
+        "nascimento": "Criado em 2010 por Graydon Hoare",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/121px-Rust_programming_language_black_logo.svg.png",
+        "historia": "O nome 'Rust' (ferrugem) vem de um grupo de fungos que são 'robustos, distribuídos e paralelos'. Graydon Hoare achou que era um bom nome para uma linguagem focada em segurança e concorrência. O mascote, Ferris, é um caranguejo amigável.",
+        "descricao": "Linguagem multiparadigma, compilada e de tipagem estática, focada em segurança de memória e concorrência sem um coletor de lixo. Seu destaque é o 'borrow checker', que garante segurança em tempo de compilação. É extremamente rápida, competindo com C/C++, e usada em sistemas operacionais, navegadores (Firefox) e blockchain. Sua curva de aprendizado é considerada íngreme.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "fn main() {\n    println!(\"Hello, world!\");\n}"
+            }
+        ],
+        "documentacao": "https://doc.rust-lang.org/book/",
+        "tags": ["linguagem de programação", "sistemas", "performance", "segurança", "compilada"]
+    },
+    {
+        "nome": "Dart",
+        "nascimento": "Criado em 2011 pelo Google",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dart-logo.png/121px-Dart-logo.png",
+        "historia": "O nome 'Dart' foi escolhido por sua conotação de velocidade e precisão. Foi criada pelo Google como uma alternativa estruturada ao JavaScript para desenvolvimento web, mas depois encontrou seu maior sucesso como a linguagem por trás do framework Flutter para desenvolvimento de apps multiplataforma.",
+        "descricao": "Dart é uma linguagem de programação orientada a objetos, compilada e otimizada para o cliente, para criar aplicativos rápidos em qualquer plataforma. Seu principal destaque é o uso com o framework Flutter, permitindo criar interfaces de usuário nativas para mobile, web e desktop a partir de uma única base de código. Possui recursos como compilação AOT (Ahead-of-Time) e JIT (Just-in-Time).",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "void main() {\n  print('Hello, World!');\n}"
+            }
+        ],
+        "documentacao": "https://dart.dev/guides",
+        "tags": ["linguagem de programação", "mobile", "frontend", "Google", "Flutter", "compilada"]
+    },
+    {
+        "nome": "Kotlin",
+        "nascimento": "Criado em 2011 pela JetBrains",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/121px-Kotlin_Icon.png",
+        "historia": "O nome vem da Ilha de Kotlin, perto de São Petersburgo, na Rússia, onde fica um dos escritórios da JetBrains. A equipe queria um nome de ilha, assim como Java foi nomeado (indiretamente) por uma ilha.",
+        "descricao": "Linguagem moderna, multiparadigma, compilada para bytecode Java e de tipagem estática. É 100% interoperável com Java e se destaca por sua sintaxe concisa e segura (null safety). É a linguagem oficial do Google para desenvolvimento Android e também está crescendo no backend. É considerada de fácil aprendizado para quem vem de Java.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "fun main() {\n    println(\"Hello, World!\")\n}"
+            }
+        ],
+        "documentacao": "https://kotlinlang.org/docs/home.html",
+        "tags": ["linguagem de programação", "android", "servidor", "JVM", "tipagem estática", "híbrida (VM)"]
+    },
+    {
+        "nome": "Elixir",
+        "nascimento": "Criado em 2012 por José Valim",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Elixir_logo_and_wordmark.svg/121px-Elixir_logo_and_wordmark.svg.png",
+        "historia": "Criada pelo brasileiro José Valim, ex-membro do time principal do Ruby on Rails, que buscava uma forma de habilitar maior concorrência e produtividade sobre a robusta máquina virtual do Erlang (BEAM). O nome 'Elixir' foi escolhido para evocar a ideia de uma poção mágica que combina os melhores ingredientes: a produtividade do Ruby com a concorrência do Erlang.",
+        "descricao": "Elixir é uma linguagem funcional, concorrente, de tipagem dinâmica e que roda na máquina virtual do Erlang (BEAM). Destaca-se por sua sintaxe expressiva inspirada em Ruby e por seu modelo de concorrência baseado em atores, herdado do Erlang. É amplamente utilizada para construir aplicações web escaláveis (com o framework Phoenix), sistemas distribuídos e de tempo real. Sua curva de aprendizado é moderada, especialmente para quem vem de linguagens funcionais ou de Ruby.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "IO.puts \"Hello, World!\""
+            }
+        ],
+        "documentacao": "https://elixir-lang.org/docs.html",
+        "tags": ["linguagem de programação", "funcional", "concorrência", "servidor", "web", "híbrida (VM)"]
+    },
+    {
+        "nome": "Julia",
+        "nascimento": "Criado em 2012 por Jeff Bezanson, Stefan Karpinski, Viral B. Shah e Alan Edelman",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Julia_Programming_Language_Logo.svg/121px-Julia_Programming_Language_Logo.svg.png",
+        "historia": "Os criadores queriam uma linguagem que tivesse a facilidade de uso do Python, a velocidade do C e o poder matemático do MATLAB. O nome 'Julia' foi escolhido por soar bonito, sem um significado técnico profundo.",
+        "descricao": "Julia é uma linguagem de programação de alto nível, alta performance e tipagem dinâmica, projetada para computação técnica e científica. Ela resolve o 'problema das duas linguagens', permitindo que o mesmo código seja usado para prototipagem e produção. Destaca-se pela sua velocidade (compilação JIT) e sintaxe matemática amigável.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "println(\"Hello, World!\")"
+            }
+        ],
+        "documentacao": "https://docs.julialang.org/",
+        "tags": ["linguagem de programação", "científica", "cálculo numérico", "performance", "híbrida (JIT)"]
+    },
+    {
+        "nome": "TypeScript",
+        "nascimento": "Criado em 2012 pela Microsoft",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/121px-Typescript_logo_2020.svg.png",
+        "historia": "O nome é autoexplicativo: 'Type' (tipo) + 'Script'. Foi criado pela Microsoft para resolver as dificuldades de desenvolver aplicações JavaScript em larga escala, adicionando um sistema de tipos estáticos para aumentar a segurança e a manutenibilidade do código.",
+        "descricao": "Linguagem que é um superconjunto do JavaScript, adicionando tipagem estática e outros recursos. Ela é transpilada para JavaScript puro. Seu principal destaque é trazer segurança de tipos para grandes projetos JavaScript, facilitando a manutenção e prevenindo bugs. É amplamente usada com frameworks como Angular, React e Vue. O aprendizado é gradual para quem já sabe JavaScript.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "console.log(\"Hello, World!\");"
+            }
+        ],
+        "documentacao": "https://www.typescriptlang.org/docs/",
+        "tags": ["linguagem de programação", "web", "frontend", "javascript", "tipagem estática", "transpilada"]
+    },
+    {
+        "nome": "PureScript",
+        "nascimento": "Criado em 2013 por Phil Freeman",
+        "logo": "https://www.purescript.org/logo.svg",
+        "historia": "O nome combina 'Pure' (puro), referindo-se à programação funcional pura, e 'Script', indicando que compila para JavaScript. Foi criado como uma alternativa ao Haskell para desenvolvimento frontend, com um sistema de tipos forte, mas com melhor interoperabilidade com o ecossistema JavaScript.",
+        "descricao": "PureScript é uma linguagem de programação puramente funcional e de tipagem estática que compila para JavaScript. É fortemente inspirada no Haskell e se destaca por seu sistema de tipos expressivo, que ajuda a eliminar uma vasta gama de erros em tempo de compilação. É uma ótima escolha para quem busca a segurança do Haskell no desenvolvimento web.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "module Main where\n\nimport Effect.Console (log)\n\nmain = log \"Hello, World!\""
+            }
+        ],
+        "documentacao": "https://book.purescript.org/",
+        "tags": ["linguagem de programação", "funcional", "frontend", "tipagem estática", "transpilada"]
+    },
+    {
+        "nome": "Swift",
+        "nascimento": "Criado em 2014 pela Apple",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/121px-Swift_logo.svg.png",
+        "historia": "O nome 'Swift' (rápido, andorinhão) foi escolhido para refletir o objetivo da linguagem de ser rápida tanto em performance quanto em desenvolvimento. O logotipo é um andorinhão, um pássaro conhecido por sua velocidade e agilidade.",
+        "descricao": "Linguagem moderna, multiparadigma, compilada e de tipagem estática, criada pela Apple para substituir o Objective-C. Destaca-se por ser segura, rápida e ter uma sintaxe expressiva. É a principal linguagem para desenvolvimento de aplicativos para iOS, macOS e todo o ecossistema Apple. É considerada de fácil aprendizado e possui ótima performance.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "print(\"Hello, World!\")"
+            }
+        ],
+        "documentacao": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/",
+        "tags": ["linguagem de programação", "Apple", "iOS", "macOS", "mobile", "compilada"]
+    },
+    {
+        "nome": "TypeScript",
+        "nascimento": "Criado em 2012 pela Microsoft",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/121px-Typescript_logo_2020.svg.png",
+        "historia": "O nome é autoexplicativo: 'Type' (tipo) + 'Script'. Foi criado pela Microsoft para resolver as dificuldades de desenvolver aplicações JavaScript em larga escala, adicionando um sistema de tipos estáticos para aumentar a segurança e a manutenibilidade do código.",
+        "descricao": "Linguagem que é um superconjunto do JavaScript, adicionando tipagem estática e outros recursos. Ela é transpilada para JavaScript puro. Seu principal destaque é trazer segurança de tipos para grandes projetos JavaScript, facilitando a manutenção e prevenindo bugs. É amplamente usada com frameworks como Angular, React e Vue. O aprendizado é gradual para quem já sabe JavaScript.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "console.log(\"Hello, World!\");"
+            }
+        ],
+        "documentacao": "https://www.typescriptlang.org/docs/",
+        "tags": ["linguagem de programação", "web", "frontend", "javascript", "tipagem estática", "transpilada"]
+    },
+    {
+        "nome": "PureScript",
+        "nascimento": "Criado em 2013 por Phil Freeman",
+        "logo": "https://www.purescript.org/logo.svg",
+        "historia": "O nome combina 'Pure' (puro), referindo-se à programação funcional pura, e 'Script', indicando que compila para JavaScript. Foi criado como uma alternativa ao Haskell para desenvolvimento frontend, com um sistema de tipos forte, mas com melhor interoperabilidade com o ecossistema JavaScript.",
+        "descricao": "PureScript é uma linguagem de programação puramente funcional e de tipagem estática que compila para JavaScript. É fortemente inspirada no Haskell e se destaca por seu sistema de tipos expressivo, que ajuda a eliminar uma vasta gama de erros em tempo de compilação. É uma ótima escolha para quem busca a segurança do Haskell no desenvolvimento web.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "module Main where\n\nimport Effect.Console (log)\n\nmain = log \"Hello, World!\""
+            }
+        ],
+        "documentacao": "https://book.purescript.org/",
+        "tags": ["linguagem de programação", "funcional", "frontend", "tipagem estática", "transpilada"]
+    },
+    {
+        "nome": "Swift",
+        "nascimento": "Criado em 2014 pela Apple",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/121px-Swift_logo.svg.png",
+        "historia": "O nome 'Swift' (rápido, andorinhão) foi escolhido para refletir o objetivo da linguagem de ser rápida tanto em performance quanto em desenvolvimento. O logotipo é um andorinhão, um pássaro conhecido por sua velocidade e agilidade.",
+        "descricao": "Linguagem moderna, multiparadigma, compilada e de tipagem estática, criada pela Apple para substituir o Objective-C. Destaca-se por ser segura, rápida e ter uma sintaxe expressiva. É a principal linguagem para desenvolvimento de aplicativos para iOS, macOS e todo o ecossistema Apple. É considerada de fácil aprendizado e possui ótima performance.",
+        "exemplo": [
+            {
+                "titulo": "Exemplo Hello World:",
+                "codigo": "print(\"Hello, World!\")"
+            }
+        ],
+        "documentacao": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/",
+        "tags": ["linguagem de programação", "Apple", "iOS", "macOS", "mobile", "compilada"]
+    }
+]
